@@ -1941,6 +1941,31 @@ html, body {
     .certificate__img-box {
         margin: 0 auto;
     }
+    /* ***************** */
+    .footer__top-inner {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+    
+      .footer__top-col {
+        margin-bottom: 30px;
+      }
+    
+      .footer__top-col:first-child {
+        flex-basis: 100%;
+        max-width: none;
+        margin-bottom: 30px;
+      }
+    
+      .footer__top-col:last-child {
+        flex-basis: 100%;
+        max-width: none;
+        margin-bottom: 0px;
+      }
+    
+      .footer__form-items {
+        max-width: 315px;
+      }
 }
 
 @media(max-width: 950px) {
@@ -2089,6 +2114,33 @@ html, body {
         flex-direction: column;
         align-items: flex-start;
     }
+    /* ********************** */
+    .footer__top-inner {
+        flex-direction: column;
+      }
+    
+      .footer__top-title--slide {
+        cursor: pointer;
+        pointer-events: auto;
+        margin: 0;
+      }
+    
+      .footer__top-list {
+        margin-top: 12px;
+        display: none;
+      }
+    
+      .footer__bottom-inner {
+        flex-direction: column-reverse;
+      }
+    
+      .footer__copy {
+        text-align: center;
+      }
+    
+      .footer__go-top {
+        margin-bottom: 15px;
+      }
 }
 
 @media(max-width: 480px) {

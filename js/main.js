@@ -88,7 +88,7 @@ $(function () {
     } else {
       $('.burger').removeClass('burger--follow')
     }
-  }, 0)
+  }, 0);
 
 
   $('.burger').on('click', function (e) {
@@ -96,6 +96,10 @@ $(function () {
     $('.burger').toggleClass('burger--active');
     $('.header__top').toggleClass('header__top--open');
     $('.overlay').toggleClass('overlay--show');
-  })
+  });
 
+
+  $('.footer__top-title--slide').on('click', function () {
+    $(this).next().slideToggle()
+  })
 })
