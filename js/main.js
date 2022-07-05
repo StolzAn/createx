@@ -91,7 +91,7 @@ $(function () {
   }, 0);
 
 
-  $('.burger').on('click', function (e) {
+  $('.burger, .header__top a').on('click', function (e) {
     e.preventDefault()
     $('.burger').toggleClass('burger--active');
     $('.header__top').toggleClass('header__top--open');
@@ -102,4 +102,7 @@ $(function () {
   $('.footer__top-title--slide').on('click', function () {
     $(this).next().slideToggle()
   })
+  $('.footer__top-title--slide').on('click', function () {
+    $(this).toggleClass('footer__top-title--slide-open');
+  });
 })

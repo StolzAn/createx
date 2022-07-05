@@ -10,6 +10,7 @@ html, body {
     width: 100%;
     height: auto;
     overflow: hidden;
+    position: relative;
 }
 
 .container {
@@ -97,6 +98,7 @@ html, body {
     left: 0;
     right: 0;
     background: rgb(0, 0, 0, 0.5);
+    z-index: 20;
     visibility: hidden;
     opacity: 0;
 }
@@ -1842,6 +1844,9 @@ html, body {
         padding: 15px;
         font-size: 20px;
     }
+    .header__menu-item:last-child {
+        padding: 15px;
+    }
 
     .header__button-box {
         flex-direction: column-reverse;
@@ -2117,8 +2122,25 @@ html, body {
     
       .footer__top-title--slide {
         cursor: pointer;
+        display: flex;
+        align-items: center;
         pointer-events: auto;
         margin: 0;
+      }
+      .footer__top-title--slide::after {
+        content: "";
+        margin-left: 8px;
+        width: 16px;
+        height: 16px;
+        background: url(../images/icons/down-arrow.svg) center center/ contain no-repeat;
+      }
+      .footer__top-title--slide-open::after {
+        content: "";
+        margin-left: 8px;
+        width: 16px;
+        height: 16px;
+        transform: rotate(180deg);
+        background: url(../images/icons/down-arrow.svg) center center/ contain no-repeat;
       }
     
       .footer__top-list {
