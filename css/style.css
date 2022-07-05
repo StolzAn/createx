@@ -207,6 +207,7 @@ html, body {
     font-weight: 700;
     font-size: 14px;
     margin: auto 0;
+    position: relative;
 }
 
 .header__title {
@@ -358,6 +359,7 @@ html, body {
     font-weight: 700;
     font-size: 18px;
     line-height: 150%;
+    white-space: nowrap;
 }
 
 .values__number {
@@ -2319,5 +2321,39 @@ html, body {
     }
     .blog__post-link{
         margin: 0;
+    }
+}
+@media(max-width: 1100px) and (orientation: landscape){
+    .header{
+        height: 100%;
+    }
+    .header__logo{
+        padding-left: 15px;
+    }
+    .header__body-video{
+        margin-top: 60px;
+    }
+    .about__btn-box{
+        display: flex;
+    }
+    .header__body-btn{
+        margin-bottom: 60px;
+    }
+    .header__top--open{
+        height: 100%;
+    }
+    .header__menu{
+        align-items: flex-start;
+    }
+    .header__top-inner{
+        align-items: flex-start;
+        padding: 36px 0 0 0;
+    }
+    .header__menu-item{
+        font-size: 17px;
+        padding: 6px 0 6px 15px;
+    }
+    .header__menu-item:last-child {
+        padding: 6px 0 6px 15px;
     }
 }
