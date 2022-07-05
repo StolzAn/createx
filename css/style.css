@@ -1810,7 +1810,7 @@ html, body {
         right: 0;
         background: #fff;
         z-index: 100;
-        min-width: 480px;
+        min-width: 260px;
         transform: translateX(100%);
         transition: all .3s;
     }
@@ -2092,6 +2092,9 @@ html, body {
 }
 
 @media(max-width: 480px) {
+    .header__top--open{
+        width: 100%;
+    }
     .heading__title {
         font-size: 32px;
     }
